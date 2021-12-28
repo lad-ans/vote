@@ -24,7 +24,7 @@ class SocketService with ChangeNotifier {
     
     try {
 
-      _socket = _io.io('http://192.168.1.101:3000',
+      _socket = _io.io('https://vote-socket-server.herokuapp.com/',
         OptionBuilder()
           .setTransports(['websocket'])
           .enableAutoConnect()
